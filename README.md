@@ -20,6 +20,5 @@ Git Setup
         `feature/css` - styling
         `feature/js` - front-end logic
 
-    [Git Usage Guide](Git_Usage_Guide.md)
-        
-
+📄 [Git Usage Guide](Git_Usage_Guide.md)
+    
