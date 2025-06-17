@@ -1,24 +1,52 @@
-Smart Library Assistant
-    To design and develop a full-stack web-based smart assistant for a modern library that enables students and faculty to search for books, reserve copies, check borrowing history, raise support tickets, and receive AI-driven recommendations—all built using Java technologies in an Agile environment.
+# 📚 Smart Library Assistant
 
-Epic: Agile Planning, UI Foundation & DevOps Initiation
-  Coverage: Agile, Unix & Shell, Git, HTML5, CSS3, JavaScript, jQuery, Bootstrap 5
-  Deliverables
-    Agile board in Jira with initial setup
-    Responsive pages for login, signup, search
-    jQuery-based validation
-    GitHub repo with proper structure
-    Shell script for daily archiving
-    UI testing checklist
+To design and develop a **full-stack web-based smart assistant for a modern library** that enables students and faculty to:
+- 🔍 Search for books
+- 📚 Reserve copies
+- 🧾 Check borrowing history
+- 🎫 Raise support tickets
+- 🤖 Receive AI-driven recommendations
 
-Git Setup
-    This repository was initialized for the Git setup phase of the Smart Library Assistant project under Cognizant GenC Internship Project Sprint.
-    Branches Created
-        `main` - production
-        `develop` - ongoing development
-        `feature/html` - UI markup
-        `feature/css` - styling
-        `feature/js` - front-end logic
+> Built using **Java technologies** in an **Agile environment** as part of the **Cognizant GenC Internship Project Sprint**.
 
-📄 [Git Usage Guide](Git_Usage_Guide.md)
-    
+---
+
+## 🧩 EPIC: Agile Planning, UI Foundation & DevOps Initiation
+
+### 🔍 Coverage:
+- Agile
+- Unix & Shell
+- Git
+- HTML5, CSS3, JavaScript
+- jQuery
+- Bootstrap 5
+
+---
+
+## ✅ Deliverables
+
+- 📋 Agile board in Jira with initial setup  
+- 📱 Responsive pages for login, signup, search  
+- ✅ jQuery-based validation  
+- 🗃 GitHub repo with proper structure  
+- 🐚 Shell script for daily archiving of frontend files  
+- 🧪 UI testing checklist  
+
+---
+
+## 🔧 Git Setup
+
+This repository was initialized for the Git setup phase of the **Smart Library Assistant** project.
+
+### 📌 Branches Created:
+- `main` – Production
+- `develop` – Ongoing development
+- `feature/html` – UI Markup
+- `feature/css` – Styling
+- `feature/js` – Front-end Logic
+
+---
+
+## 📄 Documentation
+
+📘 [Git Usage Guide](Git_Usage_Guide.md)
