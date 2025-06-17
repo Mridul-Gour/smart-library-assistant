@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 /* Global Styles */
 * {
   margin: 0;
@@ -292,7 +292,7 @@ select:focus {
 .reserve-form button[type="submit"]:hover {
   background-color: #0056b3;
 }
-=======
+
 /* Global Styles */
 * {
   margin: 0;
@@ -511,4 +511,4 @@ select:focus {
   color: #555;
   margin-bottom: 4px;
 }
->>>>>>> 425ab856e4e8b522cd34e10a2aaea5f80ad2d667
+
