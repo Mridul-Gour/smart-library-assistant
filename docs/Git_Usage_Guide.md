@@ -33,9 +33,9 @@ All developers working on this project (HTML, CSS, Backend, UI, AI etc.)
 
 | Task | Command |
 |------|---------|
-| Clone repo (if remote later) | git clone <repository-URL> |
+| Clone repo (if remote later) | `git clone <repository-URL>` |
 | Check current branch | git branch |
-| Create branch | git checkout -b feature/ <name> |
+| Create branch | `git checkout -b feature/ <name>` |
 | Switch branch | git checkout develop |
 | Save changes | git add . then git commit -m "msg" |
 | View changes | git status |
