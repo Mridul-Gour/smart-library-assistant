@@ -27,7 +27,7 @@ h2 {
   -webkit-background-clip : text;
   -webkit-text-fill-color: transparent;
 }
-.text-center mb-4{
+.text-center mb-4,h3{
      background: linear-gradient(to right ,#003300,#cc00cc);
   -webkit-background-clip : text;
   -webkit-text-fill-color: transparent;
@@ -582,9 +582,12 @@ input.valid {
 }
 
 .sr{
-   background: linear-gradient(to right, #993399, #ff99cc); /* Gradient background */
+     background: linear-gradient(to right, #993399, #ff99cc); /* Gradient background */
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
- 
+    border-radius: 6px;
+    padding:10px;
+    margin-top: 10px;
+    margin-left: 50px;
 }
 .reserve-btn{
    background: linear-gradient(to right, #009933, #006600); /* Gradient background */
