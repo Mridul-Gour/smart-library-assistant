@@ -44,8 +44,8 @@ smart-library-assistant/
 ├── assets/
 │ ├── css/
 │ │ └── styles.css
-│ ├── js/
-│ │ └── scripts.js
+├── js/
+│  |── scripts.js
 ├── docs/
 │ └── git_usage_guide.md
 └── README.md
