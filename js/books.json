@@ -1,0 +1,107 @@
+[
+  {
+    "bookId": "101",
+    "title": "Introduction to Algorithms",
+    "author": "Thomas H. Cormen",
+    "availability": "Available",
+    "image": "https://covers.openlibrary.org/b/id/8225631-L.jpg"
+  },
+  {
+    "bookId": "102",
+    "title": "Clean Code",
+    "author": "Robert C. Martin",
+    "availability": "Issued",
+    "image": "https://covers.openlibrary.org/b/id/9871051-L.jpg"
+  },
+  {
+    "bookId": "103",
+    "title": "Java: The Complete Reference",
+    "author": "Herbert Schildt",
+    "availability": "Available",
+    "image": "https://covers.openlibrary.org/b/id/10569791-L.jpg"
+  },
+  {
+    "bookId": "104",
+    "title": "Artificial Intelligence: A Modern Approach",
+    "author": "Stuart Russell",
+    "availability": "Available",
+    "image": "https://covers.openlibrary.org/b/id/8091016-L.jpg"
+  },
+  {
+    "bookId": "105",
+    "title": "Python for Data Analysis",
+    "author": "Wes McKinney",
+    "availability": "Issued",
+    "image": "https://covers.openlibrary.org/b/id/11110425-L.jpg"
+  },
+  {
+    "bookId": "106",
+    "title": "The Pragmatic Programmer",
+    "author": "Andrew Hunt",
+    "availability": "Available",
+    "image": "https://covers.openlibrary.org/b/id/8756265-L.jpg"
+  },
+  {
+    "bookId": "107",
+    "title": "Design Patterns",
+    "author": "Erich Gamma",
+    "availability": "Issued",
+    "image": "https://covers.openlibrary.org/b/id/10436397-L.jpg"
+  },
+  {
+    "bookId": "108",
+    "title": "You Don't Know JS",
+    "author": "Kyle Simpson",
+    "availability": "Available",
+    "image": "https://covers.openlibrary.org/b/id/10909268-L.jpg"
+  },
+  {
+    "bookId": "109",
+    "title": "Eloquent JavaScript",
+    "author": "Marijn Haverbeke",
+    "availability": "Available",
+    "image": "https://covers.openlibrary.org/b/id/10906819-L.jpg"
+  },
+  {
+    "bookId": "110",
+    "title": "Head First Design Patterns",
+    "author": "Eric Freeman",
+    "availability": "Issued",
+    "image": "https://covers.openlibrary.org/b/id/11111147-L.jpg"
+  },
+  {
+    "bookId": "111",
+    "title": "Data Structures and Algorithms in Java",
+    "author": "Robert Lafore",
+    "availability": "Available",
+    "image": "https://covers.openlibrary.org/b/id/10424717-L.jpg"
+  },
+  {
+    "bookId": "112",
+    "title": "Effective Java",
+    "author": "Joshua Bloch",
+    "availability": "Available",
+    "image": "https://covers.openlibrary.org/b/id/10543281-L.jpg"
+  },
+  {
+    "bookId": "113",
+    "title": "Refactoring",
+    "author": "Martin Fowler",
+    "availability": "Issued",
+    "image": "https://covers.openlibrary.org/b/id/10521998-L.jpg"
+  },
+  {
+    "bookId": "114",
+    "title": "Computer Networking: A Top-Down Approach",
+    "author": "James F. Kurose",
+    "availability": "Available",
+    "image": "https://covers.openlibrary.org/b/id/11048316-L.jpg"
+  },
+  {
+    "bookId": "115",
+    "title": "Operating System Concepts",
+    "author": "Abraham Silberschatz",
+    "availability": "Available",
+    "image": "https://covers.openlibrary.org/b/id/11011394-L.jpg"
+  }
+]
