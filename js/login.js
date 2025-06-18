@@ -1,5 +1,5 @@
 $(document).ready(function(){    
-    $("#signupForm").validate({
+    $("#loginForm").validate({
         rules:{
             email:{
                 required:true,

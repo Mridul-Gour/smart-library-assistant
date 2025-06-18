@@ -49,13 +49,6 @@
     "image": "https://covers.openlibrary.org/b/id/10436397-L.jpg"
   },
   {
-    "bookId": "108",
-    "title": "You Don't Know JS",
-    "author": "Kyle Simpson",
-    "availability": "Available",
-    "image": "https://covers.openlibrary.org/b/id/10909268-L.jpg"
-  },
-  {
     "bookId": "109",
     "title": "Eloquent JavaScript",
     "author": "Marijn Haverbeke",

@@ -15,6 +15,9 @@ $(document).ready(function(){
                 email:true,
                 regex: "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$"
             },
+            role:{
+                required:true
+            },
             password:{
                 required:true,
                 minlength:8,
@@ -26,13 +29,16 @@ $(document).ready(function(){
             }
         },
         messages:{
-            myName:{
+            fullname:{
                 required:"Enter your Full Name",
                 minlength: "Full Name must be atleast 5 characters"
             },
             email:{
                 required:"Enter your Email",
                 email:"Enter a valid Email"
+            },
+            role:{
+                required:"Select your Role"
             },
             password:{
                 required:"Enter your Password",
