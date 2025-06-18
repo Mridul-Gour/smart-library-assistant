@@ -51,7 +51,11 @@ smart-library-assistant/
 │ ├── README.md
 │ └── Other backups and archive files
 ├── js/
-│ |── scripts.js
+│ |── books.json
+│ ├── login.js
+│ ├── reserve.js
+│ ├── search.js
+│ ├── signup.js
 ├── logs/
   └── change_log.txt
 ├── README.md
