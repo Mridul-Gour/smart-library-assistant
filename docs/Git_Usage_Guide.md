@@ -18,13 +18,13 @@ All developers working on this project (HTML, CSS, Backend, UI, AI etc.)
 
 1. NEVER work directly on main.
 2. Always create a new feature branch from develop:
-	git checkout develop
-	git pull origin develop
-	git checkout -b feature/<your-task>
+	`git checkout develop`
+	`git pull origin develop`
+	`git checkout -b feature/<your-task>`
 3. After completing your work:
-	git add.
-	git commit -m "Add <description>"
-	git push origin feature/<your-task>
+	`git add.`
+	`git commit -m "Add <description>"`
+	`git push origin feature/<your-task>`
 4. Inform Git Manager (Mridul) for review and merging to develop.
 
 ----------
@@ -34,12 +34,12 @@ All developers working on this project (HTML, CSS, Backend, UI, AI etc.)
 | Task | Command |
 |------|---------|
 | Clone repo (if remote later) | `git clone <repository-URL>` |
-| Check current branch | git branch |
+| Check current branch | `git branch` |
 | Create branch | `git checkout -b feature/ <name>` |
-| Switch branch | git checkout develop |
-| Save changes | git add . then git commit -m "msg" |
-| View changes | git status |
-| Merge branch (by manager) | git checkout develop -> git merge feature/xyz |
+| Switch branch | `git checkout develop` |
+| Save changes | `git add . then git commit -m "msg"` |
+| View changes | `git status` |
+| Merge branch (by manager) | `git checkout develop -> git merge feature/xyz` |
 
 ----------
 
