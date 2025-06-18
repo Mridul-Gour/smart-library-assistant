@@ -37,18 +37,25 @@ To design and develop a **full-stack web-based smart assistant for a modern libr
 ## 📂 Repository Structure
 
 smart-library-assistant/
-├── frontend/
-│ ├── index.html
-│ ├── login.html
-│ └── signup.html
 ├── assets/
 │ ├── css/
 │ │ └── styles.css
-├── js/
-│  |── scripts.js
 ├── docs/
 │ └── git_usage_guide.md
-└── README.md
+├── frontend/
+│ ├── login.html
+│ ├── reserve.html
+│ ├── signup.html
+│ └── search.html
+├── frontend_archives/
+│ ├── README.md
+│ └── Other backups and archive files
+├── js/
+│ |── scripts.js
+├── logs/
+  └── change_log.txt
+├── README.md
+└── auto_archive_and_log.sh
 
 ## 🔧 Git Setup
 
