@@ -10,12 +10,12 @@ This folder is used to store daily backups and file change snapshots of the `fro
 - **`latest_snapshot.txt`**  
   Most recent snapshot used to compare changes between two runs.
 
-## 🛠️ How It Works:
+## 🛠 How It Works:
 - The script runs daily (via manually).
 - It checks for any changes in frontend files.
 - It archives the frontend folder.
 - It logs detected changes into `logs/change_log.txt`.
 
-## 📌 Notes:
+##  Notes:
 - This folder helps with **debugging**, **recovery**, and **tracking updates** during development.
 - Do **not** modify or delete files inside this folder unless necessary.
