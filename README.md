@@ -34,19 +34,36 @@ To design and develop a **full-stack web-based smart assistant for a modern libr
 
 ---
 
+## 📂 Repository Structure
+
+smart-library-assistant/
+├── frontend/
+│ ├── index.html
+│ ├── login.html
+│ └── signup.html
+├── assets/
+│ ├── css/
+│ │ └── styles.css
+│ ├── js/
+│ │ └── scripts.js
+├── docs/
+│ └── git_usage_guide.md
+└── README.md
+
 ## 🔧 Git Setup
 
 This repository was initialized for the Git setup phase of the **Smart Library Assistant** project.
 
-### 📌 Branches Created:
-- `main` – Production
-- `develop` – Ongoing development
-- `feature/html` – UI Markup
-- `feature/css` – Styling
-- `feature/js` – Front-end Logic
+## 🌿 Git Branch Strategy
+
+- `main` → Production-ready code
+- `develop` → Integration branch for features
+- `feature/html` → HTML markup
+- `feature/css` → CSS styling
+- `feature/js` → JavaScript & jQuery
 
 ---
 
-## 📄 Documentation
+## 📄 Documentation - A complete Git usage guide has been written and maintained here:
 
 📘 [Git Usage Guide](Git_Usage_Guide.md)
