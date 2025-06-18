@@ -7,7 +7,7 @@ $(document).ready(function(){
 
     $('#search-heading').hide();
 
-    $.getJSON('books.json', function(data){
+    $.getJSON('/js/books.json', function(data){
         allbooks = data;
         renderBooks(allbooks);
     })
@@ -23,7 +23,7 @@ $(document).ready(function(){
             return;
         }
 
-        $.getJSON('books.json', function(data){
+        $.getJSON('/assets/js/books.json', function(data){
             let matchFound = false;
             $.each(data, function(key, value){
                 if(value.title.search(expression) !== -1 || value.author.search(expression) !== -1)
