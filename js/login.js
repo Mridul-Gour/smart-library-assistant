@@ -22,3 +22,11 @@ $(document).ready(function(){
         }
     });
 });
+
+// forgot password
+$('#forgotForm').validate({
+    submitHandler: function(form) {
+        alert("If your email is registered, you will receive reset instructions.");
+        form.reset(); // optional: reset the form
+    }
+});

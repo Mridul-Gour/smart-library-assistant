@@ -64,3 +64,17 @@ $(document).ready(function(){
         });
     }
 });
+
+
+// logout code
+function toggleMenu() {
+  const menu = document.getElementById('dropdownMenu');
+  menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
+}
+
+function logout() {
+  // alert('Logging out...');
+  // // You can redirect or clear session here
+  // // window.location.href = 'login.html';
+  window.location.href = 'signup.html'; 
+}
