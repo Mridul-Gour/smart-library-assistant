@@ -128,9 +128,19 @@ select:focus {
 }
 
 /* Book Search Page Specific */
-.container {
+/* .container {
   max-width: 600px;
   align-self: flex-start;
+} */
+
+.container {
+  width: 100%;
+  max-width: 1200px;  /* Optional: limit on very large screens */
+  margin: 0 auto;     /* Center on large screens */
+  padding: 30px 40px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
 }
 
 .search-form {
@@ -411,7 +421,12 @@ btn.btn-primary.w-100.btn-signup {
   background: linear-gradient(to right, #764ba2 ,#667eea); /* Gradient background */
  
 }
-
+.btn.btn-warning.w-100{
+    background: linear-gradient(to bottom right, #ccff33 0%, #ff99cc 100%);;  
+}
+.btn.btn-warning.w-100:hover{
+    background: linear-gradient(to bottom right, #ff99cc 0%,#ccff33  100%);;  
+}
 
 /* Links */
 .signup-link,
@@ -460,23 +475,7 @@ btn.btn-primary.w-100.btn-signup {
   outline: none;
 }
 
-.search-form button {
- padding: 10px 20px;
 
-  border: none;
-  color:white;
-  font-size: 16px;
-  cursor:pointer;
-  transition: background-color 0.3s ease;
-   background: linear-gradient(to right, #667eea, #764ba2); /* Gradient background */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-
-
-}
-
-.search-form button:hover {
-  background: linear-gradient(to right, #764ba2, #667eea); /* Reversed gradient on hover */
-}
 
 .results-section h3 {
   margin-bottom: 10px;
@@ -581,33 +580,9 @@ input.valid {
   border-color: green;
 }
 
-.sr{
-     background: linear-gradient(to right, #993399, #ff99cc); /* Gradient background */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    border-radius: 6px;
-    padding:10px;
-    margin-top: 10px;
-    margin-left: 50px;
-}
-.reserve-btn{
-   background: linear-gradient(to right, #009933, #006600); /* Gradient background */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-}
 
-.reserve-btn:hover{
-   background: linear-gradient(to right, #006600, #009933); /* Gradient background */
-}
 
-.search{
-  background: linear-gradient(to right, #993399, #ff99cc); /* Gradient background */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    border-radius: 6px;
-  
-}
-.search:hover{
-  background: linear-gradient(to right, #ff99cc,#993399); /* Gradient background */
-  border-radius: 6px;
-}
+
 body.custom-bg {
   background-color: #ffffff !important;
 }
@@ -712,4 +687,3 @@ body.custom-bg {
     font-size: 16px;
   }
 }
-

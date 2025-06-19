@@ -1,0 +1,47 @@
+ body {
+     
+       background: linear-gradient(to bottom right, #339933,#330033);
+
+      color: black;
+      height: 100vh;
+    }
+    .welcome-box {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      background: white;
+     text-align: center;
+    }
+    .welcome-box h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+    .welcome-box p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+    .btn-custom {
+      padding: 10px 30px;
+      font-size: 1.1rem;
+     background: linear-gradient(to right, #667eea, #764ba2); /* Gradient background */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+    .btn-custom:hover{
+       background: linear-gradient(to right,  #764ba2,#667eea ); /* Gradient background */
+  
+    }
+    .mh{
+       
+    background: linear-gradient(to right ,#003300,#cc00cc);
+  -webkit-background-clip : text;
+  -webkit-text-fill-color: transparent;
+
+    }
+    .sb{
+
+    background: linear-gradient(to right ,#003300,#cc00cc);
+  -webkit-background-clip : text;
+  -webkit-text-fill-color: transparent;
+
+    }
