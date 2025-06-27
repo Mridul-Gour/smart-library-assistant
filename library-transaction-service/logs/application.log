@@ -1,0 +1,113 @@
+2025-06-27 09:28:44.323 [main] INFO  org.example.BookTransactionService - Reservation started for userId=U101 and bookId=B001
+2025-06-27 09:28:44.334 [main] INFO  org.example.BookTransactionService - Book B001 reserved successfully for user U101
+2025-06-27 09:28:44.334 [main] INFO  org.example.BookTransactionService - Reservation process ended for userId=U101 and bookId=B001
+2025-06-27 09:28:44.334 [main] INFO  org.example.BookTransactionService - Cancel request received for userId=U101 and bookId=B001
+2025-06-27 09:28:44.335 [main] INFO  org.example.BookTransactionService - Reservation for book B001 by user U101 successfully canceled.
+2025-06-27 09:28:44.335 [main] INFO  org.example.BookTransactionService - Borrowing started for userId=U102 and bookId=B002
+2025-06-27 09:28:44.335 [main] INFO  org.example.BookTransactionService - Book B002 successfully borrowed by user U102
+2025-06-27 09:28:44.335 [main] INFO  org.example.BookTransactionService - Return initiated for userId=U102 and bookId=B002
+2025-06-27 09:28:44.336 [main] INFO  org.example.BookTransactionService - Book B002 returned successfully by user U102
+2025-06-27 09:28:44.336 [main] INFO  org.example.BookTransactionService - Reservation started for userId=U103 and bookId=
+2025-06-27 09:28:44.336 [main] WARN  org.example.BookTransactionService - Book ID is null or blank. Cannot proceed with reservation.
+2025-06-27 10:59:29.794 [main] INFO  org.example.BookTransactionService - Reservation started for userId=U101 and bookId=B001
+2025-06-27 10:59:29.798 [main] INFO  org.example.BookTransactionService - Book B001 reserved successfully for user U101
+2025-06-27 10:59:29.799 [main] INFO  org.example.BookTransactionService - Reservation process ended for userId=U101 and bookId=B001
+2025-06-27 10:59:29.799 [main] INFO  org.example.BookTransactionService - Cancel request received for userId=U101 and bookId=B001
+2025-06-27 10:59:29.799 [main] INFO  org.example.BookTransactionService - Reservation for book B001 by user U101 successfully canceled.
+2025-06-27 10:59:29.799 [main] INFO  org.example.BookTransactionService - Borrowing started for userId=U102 and bookId=B002
+2025-06-27 10:59:29.799 [main] INFO  org.example.BookTransactionService - Book B002 successfully borrowed by user U102
+2025-06-27 10:59:29.799 [main] INFO  org.example.BookTransactionService - Return initiated for userId=U102 and bookId=B002
+2025-06-27 10:59:29.799 [main] INFO  org.example.BookTransactionService - Book B002 returned successfully by user U102
+2025-06-27 10:59:29.801 [main] INFO  org.example.BookTransactionService - Reservation started for userId=U103 and bookId=
+2025-06-27 10:59:29.801 [main] WARN  org.example.BookTransactionService - Book ID is null or blank. Cannot proceed with reservation.
+2025-06-27 10:59:29.802 [main] INFO  org.example.BookTransactionService - 🔄 Renewal requested for userId=U103 and bookId=B003
+2025-06-27 10:59:29.803 [main] INFO  org.example.BookTransactionService - ✅ Book renewed successfully for another period.
+2025-06-27 10:59:29.804 [main] INFO  org.example.BookTransactionService - ⚠️ Marking book as lost for userId=U104 and bookId=B004
+2025-06-27 10:59:29.804 [main] INFO  org.example.BookTransactionService - ✅ Book marked as lost. Fine may be applied.
+2025-06-27 10:59:29.805 [main] INFO  org.example.BookTransactionService - 💲 Fine payment started for userId=U105 amount=50.0
+2025-06-27 10:59:29.805 [main] INFO  org.example.BookTransactionService - ✅ Fine payment of 50.0 completed successfully.
+2025-06-27 10:59:29.805 [main] INFO  org.example.BookTransactionService - 💲 Fine payment started for userId=U105 amount=-10.0
+2025-06-27 10:59:29.805 [main] WARN  org.example.BookTransactionService - ⚠️ Invalid payment amount.
+2025-06-27 11:00:30.084 [main] INFO  org.example.BookTransactionService - Reservation started for userId=U101 and bookId=B001
+2025-06-27 11:00:30.087 [main] INFO  org.example.BookTransactionService - Book B001 reserved successfully for user U101
+2025-06-27 11:00:30.087 [main] INFO  org.example.BookTransactionService - Reservation process ended for userId=U101 and bookId=B001
+2025-06-27 11:00:30.087 [main] INFO  org.example.BookTransactionService - Cancel request received for userId=U101 and bookId=B001
+2025-06-27 11:00:30.087 [main] INFO  org.example.BookTransactionService - Reservation for book B001 by user U101 successfully canceled.
+2025-06-27 11:00:30.088 [main] INFO  org.example.BookTransactionService - Borrowing started for userId=U102 and bookId=B002
+2025-06-27 11:00:30.088 [main] INFO  org.example.BookTransactionService - Book B002 successfully borrowed by user U102
+2025-06-27 11:00:30.088 [main] INFO  org.example.BookTransactionService - Return initiated for userId=U102 and bookId=B002
+2025-06-27 11:00:30.088 [main] INFO  org.example.BookTransactionService - Book B002 returned successfully by user U102
+2025-06-27 11:00:30.088 [main] INFO  org.example.BookTransactionService - Reservation started for userId=U103 and bookId=
+2025-06-27 11:00:30.088 [main] WARN  org.example.BookTransactionService - Book ID is null or blank. Cannot proceed with reservation.
+2025-06-27 11:00:30.088 [main] INFO  org.example.BookTransactionService - Renewal requested for userId=U103 and bookId=B003
+2025-06-27 11:00:30.088 [main] INFO  org.example.BookTransactionService - Book renewed successfully for another period.
+2025-06-27 11:00:30.088 [main] INFO  org.example.BookTransactionService - Marking book as lost for userId=U104 and bookId=B004
+2025-06-27 11:00:30.088 [main] INFO  org.example.BookTransactionService - Book marked as lost. Fine may be applied.
+2025-06-27 11:00:30.088 [main] INFO  org.example.BookTransactionService - Fine payment started for userId=U105 amount=50.0
+2025-06-27 11:00:30.088 [main] INFO  org.example.BookTransactionService - Fine payment of 50.0 completed successfully.
+2025-06-27 11:00:30.090 [main] INFO  org.example.BookTransactionService - Fine payment started for userId=U105 amount=-10.0
+2025-06-27 11:00:30.090 [main] WARN  org.example.BookTransactionService - Invalid payment amount.
+2025-06-27 11:48:51.591 [main] INFO  org.example.BookTransactionService - Reservation started for userId=U101 and bookId=B001
+2025-06-27 11:48:51.595 [main] INFO  org.example.BookTransactionService - Book B001 reserved successfully for user U101
+2025-06-27 11:48:51.595 [main] INFO  org.example.BookTransactionService - Reservation process ended for userId=U101 and bookId=B001
+2025-06-27 11:48:51.596 [main] INFO  org.example.BookTransactionService - Cancel request received for userId=U101 and bookId=B001
+2025-06-27 11:48:51.596 [main] INFO  org.example.BookTransactionService - Reservation for book B001 by user U101 successfully canceled.
+2025-06-27 11:48:51.596 [main] INFO  org.example.BookTransactionService - Borrowing started for userId=U102 and bookId=B002
+2025-06-27 11:48:51.596 [main] INFO  org.example.BookTransactionService - Book B002 successfully borrowed by user U102
+2025-06-27 11:48:51.596 [main] INFO  org.example.BookTransactionService - Return initiated for userId=U102 and bookId=B002
+2025-06-27 11:48:51.597 [main] INFO  org.example.BookTransactionService - Book B002 returned successfully by user U102
+2025-06-27 11:48:51.597 [main] INFO  org.example.BookTransactionService - Reservation started for userId=U103 and bookId=
+2025-06-27 11:48:51.597 [main] WARN  org.example.BookTransactionService - Book ID is null or blank. Cannot proceed with reservation.
+2025-06-27 11:48:51.597 [main] INFO  org.example.BookTransactionService - Renewal requested for userId=U103 and bookId=B003
+2025-06-27 11:48:51.597 [main] INFO  org.example.BookTransactionService - Book renewed successfully for another period.
+2025-06-27 11:48:51.597 [main] INFO  org.example.BookTransactionService - Marking book as lost for userId=U104 and bookId=B004
+2025-06-27 11:48:51.597 [main] INFO  org.example.BookTransactionService - Book marked as lost. Fine may be applied.
+2025-06-27 11:48:51.598 [main] INFO  org.example.BookTransactionService - Fine payment started for userId=U105 amount=50.0
+2025-06-27 11:48:51.598 [main] INFO  org.example.BookTransactionService - Fine payment of 50.0 completed successfully.
+2025-06-27 11:48:51.598 [main] INFO  org.example.BookTransactionService - Fine payment started for userId=U105 amount=-10.0
+2025-06-27 11:48:51.598 [main] WARN  org.example.BookTransactionService - Invalid payment amount.
+2025-06-27 12:46:54.504 [main] INFO  org.example.BookTransactionService - Reservation started for userId=U101 and bookId=B001
+2025-06-27 12:46:54.509 [main] INFO  org.example.BookTransactionService - Book B001 reserved successfully for user U101
+2025-06-27 12:46:54.509 [main] INFO  org.example.BookTransactionService - Reservation process ended for userId=U101 and bookId=B001
+2025-06-27 12:46:54.509 [main] INFO  org.example.BookTransactionService - Cancel request received for userId=U101 and bookId=B001
+2025-06-27 12:46:54.509 [main] INFO  org.example.BookTransactionService - Reservation for book B001 by user U101 successfully canceled.
+2025-06-27 12:46:54.510 [main] INFO  org.example.BookTransactionService - Borrowing started for userId=U102 and bookId=B002
+2025-06-27 12:46:54.510 [main] INFO  org.example.BookTransactionService - Book B002 successfully borrowed by user U102
+2025-06-27 12:46:54.510 [main] INFO  org.example.BookTransactionService - Return initiated for userId=U102 and bookId=B002
+2025-06-27 12:46:54.510 [main] INFO  org.example.BookTransactionService - Book B002 returned successfully by user U102
+2025-06-27 12:46:54.510 [main] INFO  org.example.BookTransactionService - Reservation started for userId=U103 and bookId=
+2025-06-27 12:46:54.510 [main] WARN  org.example.BookTransactionService - Book ID is null or blank. Cannot proceed with reservation.
+2025-06-27 12:46:54.511 [main] INFO  org.example.BookTransactionService - Renewal requested for userId=U103 and bookId=B003
+2025-06-27 12:46:54.511 [main] INFO  org.example.BookTransactionService - Book renewed successfully for another period.
+2025-06-27 12:46:54.511 [main] INFO  org.example.BookTransactionService - Marking book as lost for userId=U104 and bookId=B004
+2025-06-27 12:46:54.511 [main] INFO  org.example.BookTransactionService - Book marked as lost. Fine may be applied.
+2025-06-27 15:09:54.485 [main] INFO  org.example.BookTransactionService - Reservation started for userId=U101 and bookId=B001
+2025-06-27 15:09:54.489 [main] INFO  org.example.BookTransactionService - Book B001 reserved successfully for user U101
+2025-06-27 15:09:54.489 [main] INFO  org.example.BookTransactionService - Reservation process ended for userId=U101 and bookId=B001
+2025-06-27 15:09:54.489 [main] INFO  org.example.BookTransactionService - Cancel request received for userId=U101 and bookId=B001
+2025-06-27 15:09:54.489 [main] INFO  org.example.BookTransactionService - Reservation for book B001 by user U101 successfully canceled.
+2025-06-27 15:09:54.489 [main] INFO  org.example.BookTransactionService - Borrowing started for userId=U102 and bookId=B002
+2025-06-27 15:09:54.490 [main] INFO  org.example.BookTransactionService - Book B002 successfully borrowed by user U102
+2025-06-27 15:09:54.490 [main] INFO  org.example.BookTransactionService - Return initiated for userId=U102 and bookId=B002
+2025-06-27 15:09:54.490 [main] INFO  org.example.BookTransactionService - Book B002 returned successfully by user U102
+2025-06-27 15:09:54.490 [main] INFO  org.example.BookTransactionService - Reservation started for userId=U103 and bookId=
+2025-06-27 15:09:54.490 [main] WARN  org.example.BookTransactionService - Book ID is null or blank. Cannot proceed with reservation.
+2025-06-27 15:09:54.490 [main] INFO  org.example.BookTransactionService - Renewal requested for userId=U103 and bookId=B003
+2025-06-27 15:09:54.491 [main] INFO  org.example.BookTransactionService - Book renewed successfully for another period.
+2025-06-27 15:09:54.491 [main] INFO  org.example.BookTransactionService - Marking book as lost for userId=U104 and bookId=B004
+2025-06-27 15:09:54.491 [main] INFO  org.example.BookTransactionService - Book marked as lost. Fine may be applied.
+2025-06-27 15:10:32.400 [main] INFO  org.example.BookTransactionService - Reservation started for userId=U101 and bookId=B001
+2025-06-27 15:10:32.405 [main] INFO  org.example.BookTransactionService - Book B001 reserved successfully for user U101
+2025-06-27 15:10:32.405 [main] INFO  org.example.BookTransactionService - Reservation process ended for userId=U101 and bookId=B001
+2025-06-27 15:10:32.405 [main] INFO  org.example.BookTransactionService - Cancel request received for userId=U101 and bookId=B001
+2025-06-27 15:10:32.406 [main] INFO  org.example.BookTransactionService - Reservation for book B001 by user U101 successfully canceled.
+2025-06-27 15:10:32.406 [main] INFO  org.example.BookTransactionService - Borrowing started for userId=U102 and bookId=B002
+2025-06-27 15:10:32.406 [main] INFO  org.example.BookTransactionService - Book B002 successfully borrowed by user U102
+2025-06-27 15:10:32.406 [main] INFO  org.example.BookTransactionService - Return initiated for userId=U102 and bookId=B002
+2025-06-27 15:10:32.406 [main] INFO  org.example.BookTransactionService - Book B002 returned successfully by user U102
+2025-06-27 15:10:32.407 [main] INFO  org.example.BookTransactionService - Reservation started for userId=U103 and bookId=
+2025-06-27 15:10:32.407 [main] WARN  org.example.BookTransactionService - Book ID is null or blank. Cannot proceed with reservation.
+2025-06-27 15:10:32.407 [main] INFO  org.example.BookTransactionService - Renewal requested for userId=U103 and bookId=B003
+2025-06-27 15:10:32.407 [main] INFO  org.example.BookTransactionService - Book renewed successfully for another period.
+2025-06-27 15:10:32.407 [main] INFO  org.example.BookTransactionService - Marking book as lost for userId=U104 and bookId=B005
+2025-06-27 15:10:32.407 [main] INFO  org.example.BookTransactionService - Book marked as lost. Fine may be applied.
