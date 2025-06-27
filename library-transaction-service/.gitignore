@@ -1,3 +1,7 @@
+# === Custom Exclusions for JDBC Backend ===
+*.class
+lib/ojdbc*.jar
+
 target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
