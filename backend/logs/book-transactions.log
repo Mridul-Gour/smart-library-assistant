@@ -1,0 +1,7 @@
+[2025-06-29 20:39:29] INFO  dao.BookDAO - Searching books by title: nikita ki book
+[2025-06-29 20:43:55] INFO  dao.BookDAO - Searching books by title: nikita ki book
+[2025-06-29 20:49:37] INFO  dao.BookDAO - Searching books by title: babu
+[2025-06-29 20:51:43] DEBUG dao.BookDAO - Searching books by title: babu
+[2025-06-29 20:51:43] INFO  dao.BookDAO - Searching books by title: babu
+[2025-06-29 20:51:44] INFO  dao.BookDAO - Found 0 books for title search: babu
+[2025-06-29 20:51:44] WARN  dao.BookDAO - No books found for title search: babu

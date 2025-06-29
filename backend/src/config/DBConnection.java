@@ -8,8 +8,8 @@ import java.util.Properties;
 public class DBConnection {
 
     private static final String URL = "jdbc:oracle:thin:@//localhost:1521/XEPDB1"; // Or your DB URL
-    private static final String USER = "your_username";
-    private static final String PASSWORD = "your_password";
+    private static final String USER = "system";
+    private static final String PASSWORD = "nikita";
 
     public static Connection getConnection() throws SQLException {
         Properties props = new Properties();

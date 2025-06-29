@@ -5,42 +5,50 @@ import java.util.ArrayList;
 import java.util.List;
 import model.ReservationEntity;
 import config.DBConnection;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class ReservationDAO {
+    private static final Logger logger = LoggerFactory.getLogger(ReservationDAO.class);
 
     // INSERT a new reservation
     public boolean addReservation(ReservationEntity res) {
+        logger.debug("Preparing to add reservation: userId={}, bookId={}, expiresAt={}, status={}", res.getUserId(), res.getBookId(), res.getExpiresAt(), res.getStatus());
         String sql = "INSERT INTO reservations (user_id, book_id, expires_at, status) VALUES (?, ?, ?, ?)";
     
         try (Connection conn = DBConnection.getConnection();
              PreparedStatement stmt = conn.prepareStatement(sql)) {
     
             conn.setAutoCommit(true); // Important for Oracle CLI sessions
+            logger.debug("Auto-commit set to true for connection.");
     
             stmt.setQueryTimeout(5);  // Timeout in 5 seconds if Oracle hangs
-    
-            System.out.println("Preparing to insert reservation: " + res.getUserId() + ", " + res.getBookId());
+            logger.debug("Query timeout set to 5 seconds.");
     
             stmt.setInt(1, res.getUserId());
             stmt.setInt(2, res.getBookId());
             stmt.setTimestamp(3, res.getExpiresAt());
             stmt.setString(4, res.getStatus());
     
-            System.out.println("Executing query now...");
             int rowsInserted = stmt.executeUpdate();
-            System.out.println("Rows inserted: " + rowsInserted);
-    
+            logger.info("Reservation insert executed, rowsInserted={}", rowsInserted);
+            if (rowsInserted == 0) {
+                logger.warn("No reservation was inserted for userId={}, bookId={}", res.getUserId(), res.getBookId());
+            }
             return rowsInserted > 0;
     
+        } catch (SQLTimeoutException e) {
+            logger.warn("Timeout while adding reservation: userId={}, bookId={}", res.getUserId(), res.getBookId(), e);
+            return false;
         } catch (SQLException e) {
-            System.out.println("SQL Error: " + e.getMessage());
-            e.printStackTrace();  // Show full error
+            logger.error("SQL Error while adding reservation: userId={}, bookId={}", res.getUserId(), res.getBookId(), e);
             return false;
         }
     }
 
     // GET all reservations for a user
     public List<ReservationEntity> getReservationsByUserId(int userId) {
+        logger.debug("Fetching reservations for userId={}", userId);
         String sql = "SELECT * FROM reservations WHERE user_id = ?";
         List<ReservationEntity> list = new ArrayList<>();
 
@@ -61,38 +69,41 @@ public class ReservationDAO {
 
                 list.add(res);
             }
-
+            logger.info("Fetched {} reservations for userId={}", list.size(), userId);
+            if (list.isEmpty()) {
+                logger.warn("No reservations found for userId={}", userId);
+            }
         } catch (SQLException e) {
-            e.printStackTrace();
+            logger.error("Error fetching reservations for userId={}", userId, e);
         }
         return list;
     }
 
     // CANCEL (Soft delete) a reservation
     public boolean cancelReservation(int reservationId) {
+        logger.debug("Attempting to cancel reservation with reservationId={}", reservationId);
         String sql = "UPDATE reservations SET status = 'cancelled' WHERE reservation_id = ?";
 
         try (Connection conn = DBConnection.getConnection();
              PreparedStatement stmt = conn.prepareStatement(sql)) {
 
             stmt.setInt(1, reservationId);
-
-            System.out.println("Cancelling reservation ID: " + reservationId);
             int rowsUpdated = stmt.executeUpdate();
-
-            System.out.println("Rows updated (cancelled): " + rowsUpdated);
+            logger.info("Rows updated (cancelled): {} for reservationId={}", rowsUpdated, reservationId);
+            if (rowsUpdated == 0) {
+                logger.warn("No reservation was cancelled for reservationId={}", reservationId);
+            }
             return rowsUpdated > 0;
 
         } catch (SQLException e) {
-            System.out.println("Error cancelling reservation: " + e.getMessage());
-            e.printStackTrace();
+            logger.error("Error cancelling reservation with reservationId={}", reservationId, e);
             return false;
         }
     }
 
-
     // UPDATE reservation expiry date
     public boolean updateReservationExpiry(int reservationId, Timestamp newExpiry) {
+        logger.debug("Attempting to update reservation expiry: reservationId={}, newExpiry={}", reservationId, newExpiry);
         String sql = "UPDATE reservations SET expires_at = ? WHERE reservation_id = ?";
 
         try (Connection conn = DBConnection.getConnection();
@@ -101,15 +112,15 @@ public class ReservationDAO {
             stmt.setTimestamp(1, newExpiry);
             stmt.setInt(2, reservationId);
 
-            System.out.println("Updating reservation ID: " + reservationId + " to new expiry: " + newExpiry);
             int rowsUpdated = stmt.executeUpdate();
-
-            System.out.println("Rows updated (expiry): " + rowsUpdated);
+            logger.info("Rows updated (expiry): {} for reservationId={}", rowsUpdated, reservationId);
+            if (rowsUpdated == 0) {
+                logger.warn("No reservation expiry was updated for reservationId={}", reservationId);
+            }
             return rowsUpdated > 0;
 
         } catch (SQLException e) {
-            System.out.println("Error updating reservation expiry: " + e.getMessage());
-            e.printStackTrace();
+            logger.error("Error updating reservation expiry for reservationId={}", reservationId, e);
             return false;
         }
     }
